@@ -5,22 +5,57 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body id="contact">
 	<header>
 		<!-- header code goes in here -->
 	</header>
-  
-      <div class="container">
+   <nav class="navbar navbar-expand-md">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+         <img src="Images/Logo_Sample.jpg" alt="Logo" style="width:50px;">
+      </a>
+ 
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+                <a class="nav-link" href="page1.html">Login</a>
+             </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Support/Contact Us</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="page3.html">Welcome back, Eric</a>
+          </li> 
+ 
+          <a class="navbar-brand" href="#">
+         <img src="Images/User_Sample.png" alt="Logo" style="width:50px;">
+      </a>
+        </ul>
+      </div> 
+    </nav>
+   
+      <div  id="contact-form">
+         <div class="container">
          <div class="row">
             <div class="col-lg-8">
                <h1>Contact Us</h1>
 			   <p>If you have any questions or need any information, please send us an email.</p>
-               <form id="contact-form" method="post" action="contact.php" role="form">
+               <form method="post" action="contact.php" role="form">
                   <div class="messages"></div>
                   <div class="controls">
                      <div class="row">
@@ -71,6 +106,7 @@
                </form>
             </div>
          </div>
+      </div>
       </div>
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
